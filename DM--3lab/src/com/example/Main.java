@@ -118,12 +118,12 @@ public class Main {
         return res.toString();
     }
     static boolean zeroConst(String f){
-        if (f.split("")[0].equals("0")) return true;
+        if (f.charAt(0) == '0') return true;
         return false;
     }
     static boolean oneConst(String f){
-        if (f.split("")[f.length()-1].equals("1")) return true;
-        return true;
+        if (f.charAt(f.length()-1) == '1') return true;
+        return false;
     }
     static boolean selfDvoista(String f){
         return dvoista(f).equals(f);
